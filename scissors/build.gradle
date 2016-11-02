@@ -36,4 +36,10 @@ dependencies {
     provided 'com.android.support:support-v4:' + rootProject.ext.supportVersion
 }
 
-apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+ext {
+    POM_NAME='scissors'
+    POM_ARTIFACT_ID='scissors'
+    POM_DESCRIPTION='Image Cropping for Android'
+}
+
+apply from: rootProject.file('gradle/bintray.gradle')
