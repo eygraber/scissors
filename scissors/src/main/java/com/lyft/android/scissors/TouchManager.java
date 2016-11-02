@@ -97,6 +97,10 @@ class TouchManager {
         }
     }
 
+    public void setViewportOverlayPadding(int padding) {
+        cropViewConfig.setViewportOverlayPadding(padding);
+    }
+
     public int getViewportWidth() {
         return viewportWidth;
     }
